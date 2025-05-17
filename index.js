@@ -1,6 +1,6 @@
 const express=require('express');
-const  mongoose=require('mongoose');
-const  bodyParser=require('body-parser');
+const mongoose=require('mongoose');
+const bodyParser=require('body-parser');
 require('dotenv').config();
 const pos=express();
 const  SERVER_PORT=process.env.SERVER_PORT || 3000;

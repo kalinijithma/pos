@@ -1,33 +1,33 @@
 const mongoose=require('mongoose');
-const  userSchema=new mongoose.Schema({
+const userSchema=new mongoose.Schema({
     username:{
         required:true,
-        typr:String
+        type:String
     },
 
     password:{
         required:true,
-        typr:String
+        type:String
     },
 
     fullName:{
         required:true,
-        typr:String
+        type:String
     },
 
     address:{
         required:true,
-        typr:String
+        type:String
     },
 
     status:{
         required:true,
-        typr:Boolean
+        type:Boolean
     },
 
     city:{
         required:true,
-        typr:String
+        type:String
     }
 });
 

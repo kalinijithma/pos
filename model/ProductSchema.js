@@ -1,34 +1,35 @@
 const mongoose=require('mongoose');
-const  userSchema=new mongoose.Schema({
-    username:{
+const productSchema=new mongoose.Schema({
+
+    ProductName:{
         required:true,
-        typr:String
+        type:String
     },
 
-    password:{
+    unitPrice:{
         required:true,
-        typr:String
+        type:Number
     },
 
-    fullName:{
+    description:{
         required:true,
-        typr:String
+        type:String
     },
 
-    address:{
+    image:{
         required:true,
-        typr:String
+        type:Object
     },
 
     status:{
         required:true,
-        typr:Boolean
+        type:Boolean
     },
 
-    city:{
+    qtyOnHand:{
         required:true,
-        typr:String
+        typr:Number
     }
 });
 
-module.exports=mongoose.model('user',userSchema);
+module.exports=mongoose.model('product',productSchema);
